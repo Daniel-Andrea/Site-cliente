@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário Estratégico</title>
+    <link rel="stylesheet" href="franqueado.css">
+    <!-- Adicione o EmailJS SDK -->
+    <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
+</head>
+<body>
+   
+
+
+
+    <div class="container">
+        <!-- Passo 1 - Dados Pessoais -->
+        <form id="step1" class="form-step">
+            <h2>Sessão Estratégica Acelerando Sua Clínica</h2>
+            <p>Método 10x, onde você fatura mais de 100mil por mês</p>
+
+            <label for="nome">Nome completo:</label>
+            <input type="text" id="nome" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" required>
+
+            <label for="whatsapp">WhatsApp:</label>
+            <input type="tel" id="whatsapp" required>
+
+            <label>Sexo:</label>
+            <div class="radio-group">
+                <label><input type="radio" name="sexo" value="Masculino" required> Masculino</label>
+                <label><input type="radio" name="sexo" value="Feminino"> Feminino</label>
+            </div>
+
+            <label for="nascimento">Data de Nascimento:</label>
+            <input type="date" id="nascimento" required>
+
+            <label for="estadoCivil">Estado Civil:</label>
+            <select id="estadoCivil" required>
+                <option value="Solteiro(a)">Solteiro(a)</option>
+                <option value="Casado(a)">Casado(a)</option>
+                <option value="Divorciado(a)">Divorciado(a)</option>
+            </select>
+
+            <div class="button-group">
+                <button type="button" onclick="nextStep(2)">Próximo</button>
+            </div>
+        </form>
+
+       <!-- Passo 2 - Formação -->
+       <form id="step2" class="form-step" style="display: none;">
+           <h2>Sessão Estratégica Acelerando Sua Clínica</h2>
+
+           <label>Você é dentista?</label>
+           <div class="radio-group">
+               <label>
+                   <input type="radio" name="dentista" value="Sim" required> Sim
+               </label>
+               <label>
+                   <input type="radio" name="dentista" value="Não"> Não
+               </label>
+           </div>
+
+           <label for="escolaridade">Escolaridade:</label>
+           <select id="escolaridade" required>
+               <option value="2º Grau">2º Grau</option>
+               <option value="Superior">Superior</option>
+               <option value="Pós-graduação">Pós-graduação</option>
+           </select>
+
+           <div class="button-group">
+               <button type="button" onclick="prevStep(2)">Voltar</button>
+               <button type="button" onclick="nextStep(3)">Próximo</button>
+           </div>
+       </form>
+
+       <!-- Passo 3 - Sobre o Negócio -->
+       <form id="step3" class="form-step" style="display: none;">
+           <h2>Sessão Estratégica Acelerando Sua Clínica</h2>
+
+           <label for="descricao">Descreva seu negócio:</label>
+           <textarea id="descricao" required></textarea>
+
+           <div class="button-group">
+               <button type="button" onclick="prevStep(3)">Voltar</button>
+               <button type="button" onclick="submitForm()">Enviar</button>
+           </div>
+       </form>
+    </div>
+
+    <script src="franqueado.js"></script>
+</body>
+</html>

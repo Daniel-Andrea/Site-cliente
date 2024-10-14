@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sorrisso Facil</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/f8e1a90484.js" crossorigin="anonymous"></script>
+
+</head>
+<body>
+    <nav>
+        <div class="logo">
+            <img src="/imagens/logo-sorriso-facil.png" alt="Logo" class="nav-logo"> <!-- Substituindo h1 por img -->
+        </div>
+        <ul id="menuList">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="#sobreNos">Sobre</a></li>
+            <li><a href="#form-container">Serviços</a></li>
+            <li><a href="#footer">Seja Franqueado</a></li>
+            <li>   <a href="https://api.whatsapp.com/send?phone=555555555&text=Olá%2C%20gostaria%20de%20mais%20informações." target="_blank">Contato</a></li>
+        </ul>
+        <div class="menu-icon">
+            <i class="fa-solid fa-bars" onclick="toggleMenu()"></i>
+        </div>
+    </nav>
+
+
+
+    
+    <div class="background-carrossel">
+        <div class="carrossel">
+        <div class="carrossel-images">
+            <div class="card">
+                <img src="/imagens/ordotontia.png" alt="Ortodontia">
+                <h1>Ortodontia</h1>
+                <p>Soluções em aparelhos ortodônticos que transformam os sorrisos de quem os usa!</p>
+            </div>
+            <div class="card">
+                <img src="/imagens/esse-tem-2-iguais.png" alt="Profilaxia">
+                <h1>Profilaxia</h1>
+                <p>A profilaxia dental é a limpeza profissional feita para remoção de placas bacterianas em sua forma calcificada (tártaros)</p>
+            </div>
+            <div class="card">
+                <img src="/imagens/PROTESE.png" alt="Prótese">
+                <h1>Prótese</h1>
+                <p>Que tal voltar a sorrir com segurança e mais alegria? Conheça os implantes da Sorriso Fácil.</p>
+            </div>
+            <div class="card">
+                <img src="/imagens/IMPLANTE.png" alt="Implante">
+                <h1>Implante</h1>
+                <p>Que tal voltar a sorrir com segurança e mais alegria? Conheça os implantes da Sorriso Fácil.</p>
+            </div>
+            <div class="card">
+                <img src="/imagens/CLAREAMENTO.png" alt="Clareamento">
+                <h1>Clareamento</h1>
+                <p>Esqueça o amarelo! Seus dentes merecem ficar branquinhos, igual na propaganda de pasta de dente!</p>
+            </div>
+            <div class="card">
+                <img src="/imagens/esse-tem-2-iguais.png" alt="Endodontia">
+                <h1>Endodontia</h1>
+                <p>O tratamento de canal é a remoção da polpa do dente, um pequeno tecido semelhante a um fio que fica no interior do dente.</p>
+            </div>
+            <div class="card">
+                <img src="/imagens/FACETA.png" alt="Facetas">
+                <h1>Facetas</h1>
+                <p>Já imaginou tirar aquela selfie sorrindo com seus dentes super branquinhos e alinhados? As facetas da Sorriso Fácil proporcionam esse sentimento!</p>
+            </div>
+            <div class="card">
+                <img src="/imagens/Harmonização-Orofacial.png" alt="Harmonização Orofacial">
+                <h1>Harmonização Orofacial</h1>
+                <p>Corrigir a simetria do seu rosto e sorriso é possível! Alguns dos procedimentos que você pode realizar conosco: Aplicação de botox, bichectomia, fios de sustentação.</p>
+            </div>
+        </div>
+        <button class="prev" onclick="moveSlide(-1)">&#10094;</button>
+        <button class="next" onclick="moveSlide(1)">&#10095;</button>
+    </div>
+</div>
+    
+
+    
+    <div class="form-container" id="form-container">
+        <div class="form-image">
+            <img id="desktopImage" class="desktop-img" src="/imagens/formDesktop600.png" alt="Agendamento" />
+
+            <img class="sobre-img" src="/imagens/formCelular.png" alt="Agendamento Mobile" /> <!-- Imagem para mobile -->
+        </div>
+        <div class="form-content">
+            <h1>Que tal agendar <br> sua consulta agora?</h1>
+            <form id="agendamentoForm">
+                <select id="unidade" name="unidade" required>
+                    <option value="unidades/acailandia.html">Açailândia</option>
+                    <option value="unidades/amarante.html">Amarante</option>
+                    <option value="unidades/barradocorda.html">Barra do Corda</option>
+                    <option value="unidades/codo.html">Codo</option>
+                    <option value="unidades/coroata.html">Coroata</option>
+                    <option value="unidades/estreito.html">Estreito</option>
+                    <option value="unidades/grajau.html">Grajau</option>
+                    <option value="unidades/imperatriz.html">Imperatriz</option>
+                    <option value="unidades/joaolisboa.html">João Lisboa</option>
+                    <option value="unidades/imperatrizc.html">Imperatriz Ceára</option>
+                    <option value="unidades/matoes.html">Matões</option>
+                    <option value="unidades/parnarama.html">Parnarama</option>
+                    <option value="unidades/pedreiras.html">Pedreiras</option>
+                    <option value="unidades/presidentedutra.html">Presidente Dutra</option>
+                    <option value="unidades/santaines.html">Santa Inês</option>
+                </select>
+                <div class="centerbotao">
+                    <button type="button" id="agendarButton">Agendar</button>
+                </div>
+            </form>
+        </div>
+    </div>
+    
+    
+
+    <div class="sobre-nos-container" id="sobreNos">
+        <div class="sobre-img-container">
+            <img id="formDesktopImage" class="desktop-img" src="imagens/sobreNosdesktop.png" alt="Descrição da imagem"> <!-- Imagem para desktop -->
+            <img class="sobre-img" src="imagens/sobreNos.png" alt="Descrição da imagem"> <!-- Imagem para mobile -->
+        </div>
+        <div class="sobre-nos-texto">
+            <h2>Sobre nós</h2>
+            <p>Sorrir faz bem para a vida, é através do sorriso que expressamos o ápice de nossa felicidade. Porém, nem todas as pessoas conseguem externar essa felicidade de maneira plena, por isso a Sorriso Fácil nasceu. Com o objetivo de garantir o acesso a tratamentos odontológicos com custo benefício mais acessível e entregar de volta a felicidade de sorrir para as pessoas que sempre buscaram ter um sorriso digno.</p>
+            <button><a href="sobre/sobre.html" target="_blank">Saiba mais</a></button>
+        </div>
+    </div>
+    
+    
+    
+    
+    
+    <div class="video-container">
+        <h2>A rede de franquia que mais cresce no nordeste do Brasil</h2>
+        <p>Assista ao vídeo e veja por que a Sorriso Fácil é a franquia que mais cresce no nordeste do Brasil e a melhor opção para tratamentos dentários.</p>
+        <iframe src="https://www.youtube.com/watch?v=G9lz_pwVQOY" frameborder="0" allowfullscreen></iframe>
+    </div>
+    
+    <div class="conteiner-detalhes">
+        <p class="texto-detalhe">
+            O que faz a <strong>SORRISO FÁCIL</strong>  ser a melhor escolha no tratamento dental?
+        </p>
+        <ul class="lista-detalhes">
+            <li>Satisfação garantida;</li>
+            <li>Experiência única do começo ao fim do tratamento;</li>
+            <li>Equipamentos de alta tecnologia;</li>
+            <li>Técnicas avançadas que garantem uma recuperação mais rápida e segura;</li>
+            <li>Infraestrutura moderna, semelhante ao de um hospital;</li>
+            <li>Agendamento de consulta 100% digital;</li>
+            <li>Efetuamos a reabilitação oral de carga imediata. Em poucos dias, o paciente, que não tem mais os dentes, poderá realizar os implantes e ter a prótese instalada;</li>
+            <li>Entre as nossas Áreas de Atuação está a reconstrução da estrutura óssea perdida com células-tronco.</li>
+        </ul>
+    </div>
+
+    <div class="conteiner-satisfacao">
+        <div class="card-satisfacao">
+            <img src="/imagens/Imagem do WhatsApp de 2024-09-21 à(s) 21.44.00_ea6d2b52.jpg" alt="Cliente 1">
+            <p>Rosa Rodrigues</p>
+            <p>"Antes eu sentia muita vergonha em sorrir, hoje me sinto mais confiante e mais feliz com meu novo sorriso"</p>
+        </div>
+        
+        <div class="card-satisfacao">
+            <img src="/imagens/Imagem do WhatsApp de 2024-09-21 à(s) 21.44.08_0a76d74b.jpg" alt="Cliente 2">
+            <p>Oci Veloso</p>
+            <p>"Excelente atendimento e profissionais super capacitados. Super recomendo a Sorriso Fácil."</p>
+        </div>
+
+        <div class="card-satisfacao">
+            <img src="/imagens/Imagem do WhatsApp de 2024-09-21 à(s) 21.44.16_01819ccc.jpg" alt="Cliente 3">
+            <p>Joel Riberio</p>
+            <p>"Estava muito insatisfeito com meus dentes amarelados e hoje me sinto feliz com o branco dos meus dentes!"</p>
+        </div>
+        <div class="card-satisfacao">
+            <img src="/imagens/Imagem do WhatsApp de 2024-09-21 à(s) 21.44.23_67f056cf.jpg" alt="Cliente 4">
+            <p>Jeferson Felismino</p>
+            <p>“A SORRISO FÁCIL mudou minha vida. Mudou minha forma de sorrir e interagir com as pessoas. Tenho agora muito mais confiança em mim mesmo"</p>
+        </div>
+    </div>
+
+    
+    <footer class="footer" id="footer">
+        <div class="footer-container">
+            <div class="footer-left">
+                <img src="/imagens/logo-sorriso-facil.png" alt="Logo" class="footer-logo">
+            </div>
+            <div class="footer-middle">
+                <h3>A Clínica</h3>
+                <p>Com quase 10 anos de mercado, a Sorriso Fácil é uma rede de clínicas odontológicas completa, especialista em todas as áreas de odontologia.</p>
+                <p>É conhecida principalmente pelos resultados obtidos no restabelecimento do sorriso, além de possuir ampla infraestrutura, conforto, qualidade, higiene e segurança.</p>
+                <button class="footer-button" id="trabalheConoscoButton">Trabalhe conosco</button>
+            </div>
+            <div class="footer-right">
+                <h4>Quer ser um franqueado?</h4>
+                <button class="footer-button"><a href="/fraqueado/franqueado.html" target="_blank">Seja um franqueado</a></button>
+            </div>
+            <div class="footer-social">
+                <h5>Siga-nos</h5>
+                <div class="social-icons">
+                    <a href="https://facebook.com" target="_blank"><i class="fa-brands fa-facebook"></i></a>
+                    <a href="https://instagram.com" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="https://twitter.com" target="_blank"><i class="fa-brands fa-twitter"></i></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+    
+    <script src="script.js"></script>
+</body>
+</html>

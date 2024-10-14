@@ -1,0 +1,194 @@
+/* Estilos gerais */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(135deg, #561629, #2e0511);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    color: #ffffff;
+    padding: 20px;
+}
+
+.container {
+    background-color: rgba(255, 255, 255, 0.1);
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    max-width: 600px;
+    width: 100%;
+}
+
+h2 {
+    text-align: center;
+    color: #fff;
+    font-size: 2rem;
+    margin-bottom: 30px;
+}
+
+p {
+    text-align: center;
+    font-size: 1.2rem;
+    color: #ddd;
+    margin-bottom: 25px;
+}
+
+label {
+    display: block;
+    margin-bottom: 10px;
+    color: #fff;
+    font-size: 1.2rem;
+}
+
+/* Estilos para inputs e selects */
+input,
+select,
+textarea {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 25px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 1.2rem;
+    color: #333;
+}
+
+textarea {
+    height: 120px;
+    resize: none;
+}
+
+/* Estilos para grupos de rádio */
+.radio-group {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.radio-group label {
+    display: flex;
+    align-items: center;
+    font-size: 1.2rem;
+    color: #fff;
+    padding: 10px 15px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+    flex: 1 0 48%; /* Largura dos rótulos de opção */
+    margin: 5px 0; /* Margem superior e inferior */
+}
+
+.radio-group input[type="radio"] {
+    margin-right: 10px;
+    transform: scale(1.2);
+}
+
+.radio-group label:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+}
+
+/* Botões de submit e voltar */
+button {
+    width: 100%;
+    padding: 14px;
+    background-color: #ffffff;
+    color: #561629;
+    border: 2px solid #561629;
+    border-radius: 5px;
+    font-size: 1.2rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+button:hover {
+    background-color: #561629;
+    color: #ffffff;
+}
+
+/* Grupo de botões */
+.button-group {
+    display: flex;
+    flex-direction: column; /* Para empilhar botões em dispositivos menores */
+    margin-top: 20px;
+}
+
+.button-group button {
+    margin-bottom: 10px; /* Espaço entre os botões */
+}
+
+.button-group button:last-child {
+    margin-bottom: 0; /* Remove margem do último botão */
+}
+
+/* Esconde as seções de formulário não ativas */
+.form-step {
+    display: none;
+}
+
+/* Mostra a primeira etapa por padrão */
+#step1 {
+    display: block;
+}
+
+/* Estilos responsivos para telas menores */
+@media (max-width: 800px) {
+    body {
+        padding: 10px; /* Padding reduzido para dispositivos móveis */
+    }
+
+    .container {
+        padding: 20px; /* Padding reduzido da container */
+    }
+
+    h2 {
+        font-size: 1.5rem; /* Tamanho da fonte do título ajustado */
+        margin-bottom: 20px; /* Ajustando a margem inferior */
+    }
+
+    p {
+        font-size: 1rem; /* Tamanho da fonte do parágrafo ajustado */
+        margin-bottom: 15px; /* Ajustando a margem inferior */
+    }
+
+    label {
+        font-size: 1rem; /* Tamanho da fonte do label ajustado */
+    }
+
+    input,
+    select,
+    textarea {
+        font-size: 1rem; /* Tamanho da fonte dos inputs ajustado */
+        padding: 10px; /* Ajustando o padding */
+    }
+
+    textarea {
+        height: auto; /* Permite que a altura do textarea se ajuste */
+    }
+
+    .radio-group label {
+        font-size: 1rem; /* Tamanho da fonte dos rótulos do grupo de rádio ajustado */
+        padding: 8px; /* Ajustando o padding */
+        flex: 1 0 48%; /* Mantém a largura dos rótulos */
+    }
+
+    button {
+        font-size: 1rem; /* Tamanho da fonte do botão ajustado */
+        padding: 12px; /* Ajustando o padding do botão */
+    }
+
+    /* Estilos do grupo de botões */
+    .button-group {
+        flex-direction: column; /* Colocando os botões um embaixo do outro */
+        align-items: stretch; /* Fazendo os botões ocuparem toda a largura */
+    }
+
+    button[type="button"],
+    button[type="submit"] {
+        width: 100%; /* Fazendo os botões ocuparem 100% da largura em telas pequenas */
+    }
+}

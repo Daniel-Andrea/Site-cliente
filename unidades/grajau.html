@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="unidades.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/f8e1a90484.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+
+    <title>Grajaú</title>
+  
+
+</head>
+<body>
+    <nav>
+        <div class="logo">
+            <img src="/imagens/logo-sorriso-facil.png" alt="Logo" class="nav-logo"> <!-- Substituindo h1 por img -->
+        </div>
+        <ul id="menuList">
+            <li><a href="/index.html" target="_blank">Home</a></li>
+            <li><a href="/sobre/sobre.html" target="_blank">Sobre</a></li>
+            <li><a href="/index.html" target="_blank">Serviços</a></li>
+            <li><a href="#footer">Seja Franqueado</a></li>
+            <li>   <a href="https://api.whatsapp.com/send?phone=5599981403000&text=Olá%2C%20gostaria%20de%20mais%20informações." target="_blank">Contato</a></li>
+        </ul>
+        <div class="menu-icon">
+            <i class="fa-solid fa-bars" onclick="toggleMenu()"></i>
+        </div>
+    </nav>
+
+
+    
+
+    <div class="background-carrossel">
+        <div class="carrossel">
+        <div class="carrossel-images">
+            <div class="card">
+                <img src="/imagens/ordotontia.png" alt="Ortodontia">
+                <h1>Ortodontia</h1>
+                <p>Soluções em aparelhos ortodônticos que transformam os sorrisos de quem os usa!</p>
+            </div>
+            <div class="card">
+                <img src="/imagens/esse-tem-2-iguais.png" alt="Profilaxia">
+                <h1>Profilaxia</h1>
+                <p>A profilaxia dental é a limpeza profissional feita para remoção de placas bacterianas em sua forma calcificada (tártaros)</p>
+            </div>
+            <div class="card">
+                <img src="/imagens/PROTESE.png" alt="Prótese">
+                <h1>Prótese</h1>
+                <p>Que tal voltar a sorrir com segurança e mais alegria? Conheça os implantes da Sorriso Fácil.</p>
+            </div>
+            <div class="card">
+                <img src="/imagens/IMPLANTE.png" alt="Implante">
+                <h1>Implante</h1>
+                <p>Que tal voltar a sorrir com segurança e mais alegria? Conheça os implantes da Sorriso Fácil.</p>
+            </div>
+            <div class="card">
+                <img src="/imagens/CLAREAMENTO.png" alt="Clareamento">
+                <h1>Clareamento</h1>
+                <p>Esqueça o amarelo! Seus dentes merecem ficar branquinhos, igual na propaganda de pasta de dente!</p>
+            </div>
+            <div class="card">
+                <img src="/imagens/esse-tem-2-iguais.png" alt="Endodontia">
+                <h1>Endodontia</h1>
+                <p>O tratamento de canal é a remoção da polpa do dente, um pequeno tecido semelhante a um fio que fica no interior do dente.</p>
+            </div>
+            <div class="card">
+                <img src="/imagens/FACETA.png" alt="Facetas">
+                <h1>Facetas</h1>
+                <p>Já imaginou tirar aquela selfie sorrindo com seus dentes super branquinhos e alinhados? As facetas da Sorriso Fácil proporcionam esse sentimento!</p>
+            </div>
+            <div class="card">
+                <img src="/imagens/Harmonização-Orofacial.png" alt="Harmonização Orofacial">
+                <h1>Harmonização Orofacial</h1>
+                <p>Corrigir a simetria do seu rosto e sorriso é possível! Alguns dos procedimentos que você pode realizar conosco: Aplicação de botox, bichectomia, fios de sustentação.</p>
+            </div>
+        </div>
+        <button class="prev" onclick="moveSlide(-1)">&#10094;</button>
+        <button class="next" onclick="moveSlide(1)">&#10095;</button>
+    </div>
+</div>
+
+    <div class="background-cabecalho">
+        <div class="esquerda">
+            <p><strong>Encontre uma clínica Sorriso Fácil</strong><br>
+                mais pertinho de você!</p>
+        </div>
+        <div class="direita">
+            <img src="/imagens/banner-unidades.png" alt="">
+        </div>
+    </div>
+
+    <div class="pai-form">
+
+        <div class="dados">
+            <h2>Grajaú</h2>
+            <ul>
+                <li><i class="fas fa-map-marker-alt fa-2x"></i>
+                    <span class="texto-dados">Rua Felinto Santos, n° 116 - Bairro Canoeiro, Grajaú – MA</span>
+                </li>
+                <li><i class="fas fa-phone fa-2x"></i>
+                    <span class="texto-dados">0800-0981</span>
+                </li>
+                <li><i class="fab fa-whatsapp fa-2x"></i> 
+                    <span class="texto-dados">
+                        <div class="whatsapp-button" onclick="window.open('https://wa.me/5599981403000?text=' + encodeURIComponent('Olá, gostaria de mais informações!'), '_blank')">
+                            WhatsApp
+                        </div>
+                    </span>
+                </li>
+                <li><i class="fas fa-envelope fa-2x"></i>
+                    <span class="texto-dados">
+                        <a href="mailto:clinicasorrisofacil.grajau@gmail.com" target="_blank">clinicasorrisofacil.grajau@gmail.com</a>
+                    </span>
+                </li>
+            </ul>
+        </div>
+    
+        <div class="conteiner-form">
+            <!-- Adicione o atributo data-whatsapp-number para definir o número específico -->
+            <form id="form" class="form" data-whatsapp-number="5599981403000">
+                <div class="form-control">
+                    <label for="username">Nome Completo:</label>
+                    <input type="text" id="username" name="username" required>
+                </div>
+    
+                <div class="form-control">
+                    <label for="email">E-mail:</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+    
+                <div class="form-control">
+                    <label for="whatsapp">WhatsApp:</label>
+                    <input type="tel" id="whatsapp" name="whatsapp" required>
+                </div>
+    
+                <div class="form-control">
+                    <label for="procedimento">Procedimento:</label>
+                    <input type="text" id="procedimento" name="procedimento" required>
+                </div>
+    
+                <input type="submit" value="Enviar">
+            </form>
+        </div>
+    
+    </div>
+    
+
+
+    
+
+
+
+
+    
+    <div class="conteiner-satisfacao">
+        <div class="card-satisfacao">
+            <img src="/imagens/Imagem do WhatsApp de 2024-09-21 à(s) 21.44.00_ea6d2b52.jpg" alt="Cliente 1">
+            <p>Rosa Rodrigues</p>
+            <p>"Antes eu sentia muita vergonha em sorrir, hoje me sinto mais confiante e mais feliz com meu novo sorriso"</p>
+        </div>
+        
+        <div class="card-satisfacao">
+            <img src="/imagens/Imagem do WhatsApp de 2024-09-21 à(s) 21.44.08_0a76d74b.jpg" alt="Cliente 2">
+            <p>Oci Veloso</p>
+            <p>"Excelente atendimento e profissionais super capacitados. Super recomendo a Sorriso Fácil."</p>
+        </div>
+
+        <div class="card-satisfacao">
+            <img src="/imagens/Imagem do WhatsApp de 2024-09-21 à(s) 21.44.16_01819ccc.jpg" alt="Cliente 3">
+            <p>Joel Riberio</p>
+            <p>"Estava muito insatisfeito com meus dentes amarelados e hoje me sinto feliz com o branco dos meus dentes!"</p>
+        </div>
+        <div class="card-satisfacao">
+            <img src="/imagens/Imagem do WhatsApp de 2024-09-21 à(s) 21.44.23_67f056cf.jpg" alt="Cliente 4">
+            <p>Jeferson Felismino</p>
+            <p>“A SORRISO FÁCIL mudou minha vida. Mudou minha forma de sorrir e interagir com as pessoas. Tenho agora muito mais confiança em mim mesmo"</p>
+        </div>
+    </div>
+
+
+    <div class="conteiner-detalhes">
+        <p class="texto-detalhe">
+            O que faz a <strong>SORRISO FÁCIL</strong>  ser a melhor escolha no tratamento dental?
+        </p>
+        <ul class="lista-detalhes">
+            <li>Satisfação garantida;</li>
+            <li>Experiência única do começo ao fim do tratamento;</li>
+            <li>Equipamentos de alta tecnologia;</li>
+            <li>Técnicas avançadas que garantem uma recuperação mais rápida e segura;</li>
+            <li>Infraestrutura moderna, semelhante ao de um hospital;</li>
+            <li>Agendamento de consulta 100% digital;</li>
+            <li>Efetuamos a reabilitação oral de carga imediata. Em poucos dias, o paciente, que não tem mais os dentes, poderá realizar os implantes e ter a prótese instalada;</li>
+            <li>Entre as nossas Áreas de Atuação está a reconstrução da estrutura óssea perdida com células-tronco.</li>
+        </ul>
+    </div>
+
+
+
+    <footer class="footer" id="footer">
+        <div class="footer-container">
+            <div class="footer-left">
+                <img src="/imagens/logo-sorriso-facil.png" alt="Logo" class="footer-logo">
+            </div>
+            <div class="footer-middle">
+                <h3>A Clínica</h3>
+                <p>Com quase 10 anos de mercado, a Sorriso Fácil é uma rede de clínicas odontológicas completa, especialista em todas as áreas de odontologia.</p>
+                <p>É conhecida principalmente pelos resultados obtidos no restabelecimento do sorriso, além de possuir ampla infraestrutura, conforto, qualidade, higiene e segurança.</p>
+                <button class="footer-button">Trabalhe conosco</button>
+            </div>
+            <div class="footer-right">
+                <h4>Quer ser um franqueado?</h4>
+                <button class="footer-button">Seja um franqueado</button>
+            </div>
+            <div class="footer-social">
+                <h5>Siga-nos</h5>
+                <div class="social-icons">
+                    <a href="https://facebook.com" target="_blank"><i class="fa-brands fa-facebook"></i></a>
+                    <a href="https://instagram.com" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="https://twitter.com" target="_blank"><i class="fa-brands fa-twitter"></i></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+    
+    
+    <script src="unidades.js"></script>
+</body>
+</html>
